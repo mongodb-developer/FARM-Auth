@@ -1,0 +1,18 @@
+# API Server
+fastapi
+uvicorn[standard]
+pydantic[email]
+ujson
+email-validator
+python-multipart
+
+# JWT & Auth
+fastapi-users[mongodb]
+
+# Database
+motor
+dnspython
+
+# Development
+black
+flake8
