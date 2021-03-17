@@ -18,7 +18,7 @@ async def configure_db_and_routes():
     app.mongodb_client = AsyncIOMotorClient(
         settings.DB_URL, uuidRepresentation="standard"
     )
-    app.db = app.mongodb_client[settings.DB_NAME]
+    app.db = app.mongodb_client.get_default_database()
 
     user_db = MongoDBUserDatabase(UserDB, app.db["users"])
 
