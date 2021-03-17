@@ -19,8 +19,7 @@ You'll need to set the following environment variables before running the projec
 ```bash
     # The following will work on Linux & OSX:
     export DEBUG_MODE=True
-    export DB_URL="mongodb+srv://<username>:<password>@<url>/<db>?retryWrites=true&w=majority"
-    export DB_NAME="farmstack"
+    export DB_URL="mongodb+srv://<username>:<password>@<url>/farmstack?retryWrites=true&w=majority"
     export JWT_SECRET_KEY="<secret value>"
     export REALM_APP_ID="<realm id>"
 ```
